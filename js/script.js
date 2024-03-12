@@ -64,23 +64,26 @@
 // });
 
 $(document).ready(function () {
-  var block3Offset = $("#block3").offset().top;
+  var block2Offset = $("#block3").offset().top;
 
-  // Показать/скрыть кнопку "Подняться наверх"
+  // Скрываем кнопку "Подняться наверх"
+  $("#scrollTopBtn").hide();
+
+  // Показать/скрыть кнопку "Подняться наверх" при достижении второго блока
   $(window).scroll(function () {
-    if ($(this).scrollTop() > block3Offset) {
+    if ($(this).scrollTop() > block2Offset) {
       $("#scrollTopBtn").fadeIn();
     } else {
       $("#scrollTopBtn").fadeOut();
     }
   });
 
-  // Плавная прокрутка к якорю
+  // Плавная прокрутка к якорю с отступом сверху
   $("nav a").on("click", function (event) {
     if (this.hash !== "") {
       event.preventDefault();
       const hash = this.hash;
-      var targetOffset = $(hash).offset().top; // Уменьшаем отступ сверху
+      var targetOffset = $(hash).offset().top - 20; // Уменьшаем отступ сверху
       $("html, body").animate(
         {
           scrollTop: targetOffset,
@@ -95,24 +98,18 @@ $(document).ready(function () {
     }
   });
 
-  $("div a").on("click", function (event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      const hash = this.hash;
-      $("html, body").animate(
-        {
-          scrollTop: $(hash).offset().top,
-        },
-        800,
-        function () {
-          window.location.hash = hash;
-        }
-      );
-    }
-  });
-
   // Кнопка "Подняться наверх"
   $("#scrollTopBtn").on("click", function () {
-    $("html, body").animate({ scrollTop: block3Offset }, "slow");
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+  });
+
+  // Управление прокруткой стрелочками клавиатуры
+  $(document).keydown(function (e) {
+    if (e.keyCode == 37 || e.keyCode == 39) {
+      // Стрелка влево или вправо
+      e.preventDefault();
+      var delta = e.keyCode == 37 ? -120 : 120; // Определяем направление прокрутки
+      $(window).scrollLeft($(window).scrollLeft() + delta); // Прокручиваем страницу на определенное количество пикселей
+    }
   });
 });
