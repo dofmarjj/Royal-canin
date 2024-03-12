@@ -1,0 +1,840 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul,
+nav,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ---------------------------------------- */
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#scrollTopBtn {
+  max-width: 180px;
+
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+
+  padding: 8px 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #eab5d0;
+
+  color: #aa1356;
+  font-family: DINPro;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 0.3s linear;
+}
+
+#scrollTopBtn:hover {
+  color: #fff;
+  transition: 0.1s linear;
+}
+
+/* ---------------------------------------- */
+
+/* Cards */
+.cards-block {
+  position: relative;
+}
+
+.cards-block a img:hover {
+  max-width: 7%;
+  box-shadow: 0 0 10px rgba(184, 184, 184, 0.6);
+  transition: 0.3s linear;
+}
+
+.card-1 {
+  position: absolute;
+  left: 237px;
+  top: 20px;
+  max-width: 6%;
+  min-width: 65px;
+  transition: 0.3s linear;
+}
+
+.card-2 {
+  position: absolute;
+  left: 442px;
+  top: 20px;
+  max-width: 6%;
+  min-width: 65px;
+  transition: 0.3s linear;
+}
+
+.card-3 {
+  position: absolute;
+  left: 442px;
+  bottom: 105px;
+  max-width: 6%;
+  min-width: 65px;
+  transition: 0.3s linear;
+}
+
+.card-4 {
+  position: absolute;
+  left: 680px;
+  bottom: 105px;
+  max-width: 6%;
+  min-width: 65px;
+  transition: 0.3s linear;
+}
+
+.card-5 {
+  position: absolute;
+  left: 865px;
+  bottom: 105px;
+  max-width: 6%;
+  min-width: 65px;
+  transition: 0.3s linear;
+}
+/* Cards */
+
+._container {
+  max-width: 1092px;
+  padding: 0px 15px;
+  margin: 0px auto;
+  box-sizing: content-box;
+}
+
+._line {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #f6f6f6;
+}
+
+._img {
+  width: 100%;
+}
+
+p span {
+  color: #e2001a;
+  font-family: DINPro;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+}
+/* ---Header------------------------------------- */
+
+.header {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.header__container {
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+  position: relative;
+  z-index: 2;
+}
+.header__logo {
+  width: min-content;
+}
+.header__img {
+}
+.header__menu {
+  margin: 32px 0px 0px 0px;
+}
+.menu {
+}
+.menu__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.menu__list li {
+  margin: 0px 0px 0px 50px;
+}
+
+.menu__item {
+}
+.menu__link {
+  color: #666666;
+  font-family: DINPro;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+/* ---Main------------------------------------- */
+.main {
+  flex: 1 1 auto;
+}
+
+/* ---About------------------------------------- */
+
+.about {
+}
+
+.page {
+  padding: 120px 0px 0px 0px;
+}
+
+.page__main-block {
+  width: 100%;
+  background-color: #f6f6f6;
+  padding: 48px 0px;
+}
+.page__main-title {
+  color: #e2001a;
+  font-family: DINPro;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 112.5%;
+  text-align: center;
+}
+
+/* ---Main block------------------------------------- */
+
+.page-history,
+.page-cycle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.page-about {
+  margin-bottom: 80px;
+}
+
+.page-history__block {
+  margin-top: 50px;
+}
+
+.page-history__title,
+.page-cycle__title,
+.diet-block__title {
+  color: #e2001a;
+  font-family: DINPro;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 125%;
+  margin-bottom: 32px;
+}
+
+.page-history__subtitle,
+.page-cycle__subtitle,
+.diet-block__subtitle {
+  color: #666666;
+  font-family: DINPro;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.page-history__subtitle:last-child,
+.page-cycle__subtitle:last-child,
+.diet-block__subtitle:last-child {
+  margin-top: 32px;
+}
+
+.page-history__img,
+.page-cycle__img {
+  width: 50%;
+}
+
+.program {
+  margin-bottom: 80px;
+}
+
+.program-title {
+  max-width: 60%;
+  margin: auto;
+
+  color: #e2001a;
+  font-family: DINPro;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 125%;
+
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page__diet {
+  margin-bottom: 80px;
+}
+
+.diet-block {
+  display: flex;
+  align-items: center;
+  padding: 55px 80px;
+  margin-bottom: 80px;
+}
+
+.diet-block__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.diet-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  margin-bottom: 80px;
+}
+
+.diet-list__item {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.diet-list__item img {
+  /* width: 20%; */
+}
+
+.diet-list__text {
+  padding: 0 30px;
+}
+
+.diet-list__title {
+  color: #e2001a;
+  font-family: DINPro;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.diet-list__subtitle {
+  color: #666666;
+  font-family: DINPro;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.factors-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.diet-factors {
+  position: relative;
+  width: 50%;
+  padding: 55px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.diet-factors::before,
+.diet-factors::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 115px;
+  border: 2px dashed #eab5d0; /* Пунктирная линия */
+}
+
+.diet-factors::before {
+  top: -2px;
+  left: -2px;
+  border-bottom: none;
+  border-right: none;
+  border-radius: 60px 0 0 0; /* Форма линии (угол) */
+}
+
+.diet-factors::after {
+  bottom: -2px;
+  right: -2px;
+  border-top: none;
+  border-left: none;
+  border-radius: 0 0 60px 0; /* Форма линии (угол) */
+}
+
+.diet-factors__title {
+  color: #e2001a;
+  font-family: DINPro;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.diet-factors__item {
+  list-style: disc;
+  margin-left: 30px;
+
+  color: #666666;
+  font-family: DINPro;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.diet-factors__subtitle {
+  color: #666666;
+  font-family: DINPro;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.diet-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.diet-about__title,
+.diet-about__title {
+  color: #e2001a;
+  font-family: DINPro;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+}
+.diet-about__subtitle {
+  color: #666666;
+  font-family: DINPro;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.diet-about__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 32px;
+
+  max-width: 540px;
+}
+
+.diet-milk div .diet-factors {
+  text-align: center;
+}
+
+.milk-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 32px;
+}
+
+.diet-about__title {
+  max-width: 40%;
+  text-align: center;
+
+  margin-bottom: 32px;
+}
+
+.milk-about-mob__img {
+  display: none;
+}
+
+.diet-note {
+  text-align: center;
+  color: #666666;
+  font-family: DINPro-It;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 200%;
+}
+
+/* ---Footer------------------------------------- */
+
+.footer {
+  margin-bottom: 100px;
+}
+
+.diet-mobile__block {
+  display: none;
+}
+
+.header__burger {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .page__main-title {
+    font-size: 54px;
+  }
+
+  .cards-block {
+    overflow-x: auto;
+  }
+
+  .cards-block::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  .cards-block::-webkit-scrollbar-thumb {
+    background-color: #ff0000; /* Цвет полосы прокрутки */
+    border-radius: 6px; /* Скругляем углы полосы прокрутки */
+  }
+
+  .diet-bottom__img,
+  .diet-complex__img,
+  .diet-milk__img,
+  .diet-need__img,
+  .diet-solution__img {
+    display: none;
+  }
+
+  .diet-mobile__block {
+    display: block;
+    width: 100%;
+    position: relative;
+
+    background-color: #efb4cb;
+  }
+
+  .diet-solution .diet-mobile__block {
+    background-color: #e5508d;
+  }
+
+  .diet-solution .diet-mobile__title {
+    color: white;
+    padding: 17px 0;
+  }
+
+  .diet-mobile__img {
+    max-width: 65px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    bottom: 30%;
+  }
+
+  .diet-mobile__title {
+    color: #a91255;
+
+    font-family: DINPro;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+
+  .diet-mobile__subtitle {
+    color: #666666;
+
+    font-family: DINPro;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+  }
+
+  .diet-mobile__text {
+    width: 90%;
+    margin: auto;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .diet-block {
+    flex-direction: column;
+    row-gap: 35px;
+    padding: 55px 0;
+  }
+
+  .diet-card__img {
+    width: 100%;
+    max-width: 445px;
+  }
+
+  .diet-block__text {
+    text-align: center;
+  }
+
+  .diet-about {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+
+  .diet-about__title {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 80px 0px 0px 0px;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__burger {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 35%;
+    width: 30px;
+    height: 20px;
+  }
+
+  .header__burger span {
+    position: absolute;
+    background-color: #808285;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+  }
+
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    background-color: #808285;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+
+  .header__burger::before {
+    top: 0px;
+  }
+
+  .header__burger::after {
+    bottom: 0px;
+  }
+
+  .header__container {
+    padding: 15px 0;
+  }
+
+  .page-history,
+  .page-cycle {
+    flex-direction: column-reverse;
+  }
+
+  .page-history__block,
+  .page-cycle__block {
+    text-align: center;
+  }
+
+  .page-history__title,
+  .page-cycle__title,
+  .diet-block__title,
+  .program-title {
+    max-width: 100%;
+    font-size: 24px;
+    line-height: 133.3%;
+  }
+
+  .page-history__img,
+  .page-cycle__img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .page__main-block {
+    display: flex;
+    justify-content: center;
+    padding: 32px 0;
+  }
+
+  .page__main-title {
+    max-width: 250px;
+    font-size: 32px;
+  }
+
+  .diet-list {
+    flex-direction: column;
+  }
+
+  .diet-list__item {
+    width: 100%;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .diet-list__text {
+    text-align: center;
+  }
+
+  .diet-factors {
+    width: 100%;
+    padding: 0;
+  }
+
+  .diet-factors::before,
+  .diet-factors::after {
+    display: none;
+  }
+
+  .diet-factors__title,
+  .diet-factors__subtitle {
+    text-align: center;
+  }
+
+  .milk-about-desc__img {
+    display: none;
+  }
+
+  .milk-about-mob__img {
+    display: block;
+  }
+}
