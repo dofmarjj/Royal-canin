@@ -181,7 +181,6 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   top: 0;
   transition: top 2.5s;
 }
@@ -930,6 +929,11 @@ p span {
   .page-history__block,
   .page-cycle__block {
     text-align: center;
+  }
+
+  .page-history,
+  .page-cycle {
+    padding-top: 32px;
   }
 
   .page-history__title,
