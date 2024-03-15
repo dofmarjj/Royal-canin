@@ -141,6 +141,7 @@ hr {
   position: fixed;
   right: 20px;
   bottom: 30px;
+  z-index: 10;
 
   padding: 6px 32px;
   border-radius: 40px;
@@ -181,6 +182,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   top: 0;
   transition: top 2.5s;
 }
@@ -253,6 +255,7 @@ nav {
     position: absolute;
     top: 10px;
     left: 10px;
+    width: auto;
   }
 
   .menu {
@@ -763,6 +766,10 @@ p span {
 }
 
 @media (max-width: 992px) {
+  .header__logo {
+    margin-bottom: 0;
+  }
+
   .page__main-title {
     font-size: 54px;
   }
@@ -870,6 +877,10 @@ p span {
   .diet-about__title {
     max-width: 100%;
   }
+
+  .program-title {
+    padding-top: 32px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -923,17 +934,16 @@ p span {
 
   .page-history,
   .page-cycle {
+    padding-top: 32px;
+  }
+  .page-history,
+  .page-cycle {
     flex-direction: column-reverse;
   }
 
   .page-history__block,
   .page-cycle__block {
     text-align: center;
-  }
-
-  .page-history,
-  .page-cycle {
-    padding-top: 32px;
   }
 
   .page-history__title,
