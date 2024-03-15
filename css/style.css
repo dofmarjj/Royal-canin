@@ -740,6 +740,10 @@ p span {
   display: none;
 }
 
+.mars-footer-label {
+  font-size: 100px;
+}
+
 @media (max-width: 992px) {
   .page__main-title {
     font-size: 54px;
