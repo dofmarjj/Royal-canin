@@ -132,25 +132,35 @@ hr {
 }
 
 #scrollTopBtn {
-  max-width: 180px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 
   position: fixed;
   right: 20px;
   bottom: 30px;
 
-  padding: 8px 10px;
-  border-radius: 20px;
+  padding: 6px 32px;
+  border-radius: 40px;
   border: none;
-  background-color: #eab5d0;
+  background-color: #e2001a;
 
-  color: #aa1356;
+  color: white;
   font-family: DINPro;
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
-  text-transform: uppercase;
-  text-align: center;
+  /* text-transform: uppercase; */
+  text-align: left;
   transition: 0.3s linear;
+}
+
+#scrollTopBtn::after {
+  content: url("../img/arrow up.svg");
+
+  /* background-image: url("../img/arrow up.svg"); */
 }
 
 #scrollTopBtn:hover {
@@ -370,6 +380,7 @@ nav {
 
 ._img {
   width: 100%;
+  margin-top: 32px;
 }
 
 p span {
@@ -378,6 +389,11 @@ p span {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
+}
+
+._gray {
+  color: #666666;
+  font-weight: 600;
 }
 
 .fix {
@@ -409,6 +425,7 @@ p span {
   width: min-content;
   position: relative;
   z-index: 5;
+  margin-bottom: 32px;
 }
 .header__img {
 }
@@ -474,7 +491,8 @@ p span {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 80px;
+  padding-top: 80px;
+  /* margin-bottom: 80px; */
 }
 
 .page-about {
@@ -501,7 +519,7 @@ p span {
 .diet-block__subtitle {
   color: #666666;
   font-family: DINPro;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
 }
@@ -533,6 +551,7 @@ p span {
 
   text-align: center;
   margin-bottom: 40px;
+  padding-top: 80px;
 }
 
 .page__diet {
