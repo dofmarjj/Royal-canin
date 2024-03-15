@@ -113,3 +113,28 @@ $(document).ready(function () {
     }
   });
 });
+
+$(document).ready(function () {
+  $(".burger-menu").click(function () {
+    $(this).toggleClass("active");
+    $(".menu").toggleClass("active");
+    $(".overlay").toggleClass("active");
+    $("html").toggleClass("no-scroll");
+  });
+
+  $(".menu li a").click(function () {
+    var targetBlock = $($(this).attr("href"));
+    if (targetBlock.length) {
+      $("html, body").animate(
+        {
+          scrollTop: targetBlock.offset().top,
+        },
+        1000
+      );
+    }
+    $(".burger-menu").removeClass("active");
+    $(".menu").removeClass("active");
+    $(".overlay").removeClass("active");
+    $("html").removeClass("no-scroll");
+  });
+});
