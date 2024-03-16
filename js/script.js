@@ -14,23 +14,17 @@ $(document).ready(function () {
   });
 
   // Плавная прокрутка к якорю с отступом сверху
-  $("nav a, #scrollTopBtn, .cards-block a").on("click", function (event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      const hash = this.hash;
-      var targetOffset = $(hash).offset().top - 64;
-      $("html, body").animate(
+
+  $('a[href*="#"]').click(function (e) {
+    $("html, body")
+      .stop()
+      .animate(
         {
-          scrollTop: targetOffset,
+          scrollTop: $(this.hash).offset().top - 100,
         },
-        2000,
-        function () {
-          window.location.hash = hash;
-          // Останавливаем прокрутку
-          $("html, body").stop();
-        }
+        1000
       );
-    }
+    e.preventDefault();
   });
 });
 
@@ -47,7 +41,7 @@ $(document).ready(function () {
     if (targetBlock.length) {
       $("html, body").animate(
         {
-          scrollTop: targetBlock.offset().top,
+          scrollTop: targetBlock.offset().top - 100,
         },
         1000
       );
