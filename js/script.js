@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var block2Offset = $("#block3").offset().top;
+  var block2Offset = $("#block3").offset().top + 400;
 
   // Скрываем кнопку "Подняться наверх"
   $("#scrollTopBtn").hide();
