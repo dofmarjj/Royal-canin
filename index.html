@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Royal canin</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/full.css" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -96,7 +98,13 @@
               </div>
             </div>
 
-            <img src="./img/img-1.svg" alt="" width="100%" />
+            <img src="./img/img-1.svg" alt="" class="page__img" width="100%" />
+
+            <img
+              src="./img/img-1-mob.jpg"
+              alt=""
+              class="page-mob__img materialboxed"
+              width="100%" />
           </div>
         </div>
 
@@ -179,7 +187,8 @@
                   class="diet-card__img-mob" />
 
                 <p class="diet-card__text">
-                  Кішка під час тічки, вагітності та лактації
+                  Кішка під час
+                  <lable class="_purple">тічки, вагітності </lable>та лактації
                 </p>
               </div>
               <div class="diet-block__text">
@@ -305,10 +314,22 @@
               alt=""
               style="position: absolute" />
             <div class="diet-block">
-              <img
-                src="./img/products/img-motherbabycat-complex.svg"
-                class="diet-card__img"
-                alt="motherbabycat-complex" />
+              <div class="diet-block__img complex">
+                <img
+                  src="./img/products/img-motherbabycat-complex.svg"
+                  alt=""
+                  class="diet-card__img" />
+                <img
+                  src="./img/products/img-motherbabycat-complex-mob.png"
+                  alt=""
+                  style="width: 50%"
+                  class="diet-card__img-mob" />
+
+                <p class="diet-card__text">
+                  <span class="_gray">Mother & Babycat </span>під частічки,
+                  вагітності та <lable class="_purple">лактації</lable>
+                </p>
+              </div>
               <div class="diet-block__text">
                 <h2 class="diet-block__title">
                   MOTHER & BABYCAT:Комплексний раціон
@@ -437,10 +458,23 @@
               class="diet-milk__img"
               style="position: absolute" />
             <div class="diet-block">
-              <img
-                src="./img/products/image-babycatmilk.svg"
-                class="diet-card__img"
-                alt="babycatmilk" />
+              <div class="diet-block__img babycatmilk">
+                <img
+                  src="./img/products/image-babycatmilk.svg"
+                  alt=""
+                  class="diet-card__img" />
+                <img
+                  src="./img/products/image-babycatmilk-mob.png"
+                  alt=""
+                  style="width: 50%"
+                  class="diet-card__img-mob" />
+
+                <p class="diet-card__text">
+                  <span class="_gray">Кошенята з 1 дня</span> до кінця
+                  відлучення
+                </p>
+              </div>
+
               <div class="diet-block__text">
                 <h2 class="diet-block__title">
                   Замінник молока містить ключові нутрієнти, що містяться в
@@ -555,10 +589,22 @@
               class="diet-need__img"
               style="position: absolute" />
             <div class="diet-block">
-              <img
-                src="./img/products/motherbabycat.svg"
-                class="diet-card__img"
-                alt="" />
+              <div class="diet-block__img motherbabycat">
+                <img
+                  src="./img/products/motherbabycat.svg"
+                  alt=""
+                  class="diet-card__img" />
+                <img
+                  src="./img/products/motherbabycat-mob.png"
+                  alt=""
+                  style="width: 50%"
+                  class="diet-card__img-mob" />
+
+                <p class="diet-card__text">
+                  <span class="_gray">Кошенята</span> з 1 до 4 місяця
+                </p>
+              </div>
+
               <div class="diet-block__text">
                 <h2 class="diet-block__title">
                   Забезпечення харчових потреб кошенят під час відлучення
@@ -649,10 +695,22 @@
               alt="kitten_lable"
               style="position: absolute" />
             <div class="diet-block">
-              <img
-                src="./img/products/kitten.svg"
-                class="diet-card__img"
-                alt="kitten" />
+              <div class="diet-block__img kitten">
+                <img
+                  src="./img/products/kitten.svg"
+                  alt=""
+                  class="diet-card__img" />
+                <img
+                  src="./img/products/kitten-mob.png"
+                  alt=""
+                  style="width: 50%"
+                  class="diet-card__img-mob" />
+
+                <p class="diet-card__text">
+                  <span class="_gray">Кошенята</span> з 4 місяців
+                </p>
+              </div>
+
               <div class="diet-block__text">
                 <h2 class="diet-block__title">
                   Харчове рішення для кошенят у перші місяці їхнього життя
@@ -721,6 +779,7 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

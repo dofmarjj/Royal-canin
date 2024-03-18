@@ -415,12 +415,16 @@ nav {
   margin-top: 32px;
 }
 
+._purple {
+  color: #efb4cb;
+}
+
 p span {
   color: #e2001a;
   font-family: DINPro;
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  /* line-height: 150%; */
 }
 
 ._gray {
@@ -575,6 +579,10 @@ p span {
 .page-history__img,
 .page-cycle__img {
   width: 50%;
+}
+
+.page-mob__img {
+  display: none;
 }
 
 .program {
@@ -796,10 +804,25 @@ p span {
 }
 
 .diet-block__img::before {
-  content: url("../img/products/mark.svg");
+  content: url("../img/products/mark-queen.svg");
   position: absolute;
   top: -35px;
   left: 85px;
+}
+
+.diet-block__img.complex::before {
+  content: url("../img/products/mark-complex.svg");
+}
+
+.diet-block__img.motherbabycat::before {
+  content: url("../img/products/mark-babycat.svg");
+}
+
+.diet-block__img.babycatmilk::before {
+  content: "";
+}
+.diet-block__img.kitten::before {
+  content: "";
 }
 
 .diet-card__text {
@@ -807,12 +830,29 @@ p span {
   font-weight: 500;
   font-size: 14px;
   line-height: 128.5%;
+  color: #666666;
 
   position: absolute;
   bottom: -35px;
   left: 0;
 
   max-width: 186px;
+}
+
+.complex .diet-card__text {
+  max-width: 195px;
+}
+
+.babycatmilk .diet-card__text {
+  max-width: 128px;
+}
+
+.motherbabycat .diet-card__text {
+  max-width: 85px;
+}
+
+.kitten .diet-card__text {
+  max-width: 80px;
 }
 
 .diet-card__text::before {
@@ -860,6 +900,14 @@ p span {
 
   .page__main-title {
     font-size: 54px;
+  }
+
+  .page-mob__img {
+    display: block;
+  }
+
+  .page__img {
+    display: none;
   }
 
   .cards-block {
@@ -1042,9 +1090,12 @@ p span {
   .page-cycle {
     padding-top: 32px;
   }
-  .page-history,
-  .page-cycle {
+  .page-history {
     flex-direction: column-reverse;
+  }
+  .page-cycle {
+    flex-direction: column;
+    padding-bottom: 32px;
   }
 
   .page-history__block,
@@ -1118,3 +1169,5 @@ p span {
     display: block;
   }
 }
+
+/* Full */
