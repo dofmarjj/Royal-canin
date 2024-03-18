@@ -952,6 +952,10 @@ p span {
     max-width: 445px;
   }
 
+  .diet-block__img {
+    display: none;
+  }
+
   .diet-card__img-mob {
     display: block;
   }
