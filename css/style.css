@@ -173,7 +173,7 @@ hr {
 
 /* ------Burger---------------------------------- */
 
-nav {
+.nav-burger {
   position: relative;
   z-index: 1;
   background-color: #fff;
@@ -250,7 +250,7 @@ nav {
 }
 
 @media (max-width: 768px) {
-  nav {
+  .nav-burger {
     display: block;
     position: absolute;
     top: 10px;
