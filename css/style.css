@@ -787,6 +787,50 @@ p span {
   line-height: 200%;
 }
 
+.diet-block__img {
+  min-width: 442px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diet-block__img::before {
+  content: url("../img/products/mark.svg");
+  position: absolute;
+  top: -35px;
+  left: 85px;
+}
+
+.diet-card__text {
+  font-family: DINPro;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 128.5%;
+
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+
+  max-width: 186px;
+}
+
+.diet-card__text::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 50px;
+  border: 2px solid #eab5d0; /* Пунктирная линия */
+}
+
+.diet-card__text::before {
+  top: -10px;
+  left: -10px;
+  border-top: none;
+  border-right: none;
+  border-radius: 0px 0 0 0; /* Форма линии (угол) */
+}
+
 /* ---Footer------------------------------------- */
 
 .footer {
@@ -900,12 +944,25 @@ p span {
   }
 
   .diet-card__img {
-    width: 100%;
+    /* width: 100%; */
     max-width: 445px;
+  }
+
+  .diet-block__img {
+    max-width: min-content;
+  }
+
+  .diet-card__text {
+    position: static;
+    text-align: center;
   }
 
   .diet-block__text {
     text-align: center;
+  }
+
+  .diet-card__text::before {
+    display: none;
   }
 
   .diet-about {
