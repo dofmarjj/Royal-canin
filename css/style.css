@@ -831,10 +831,6 @@ p span {
   border-radius: 0px 0 0 0; /* Форма линии (угол) */
 }
 
-.diet-card__img-mob {
-  display: none;
-}
-
 /* ---Footer------------------------------------- */
 
 .footer {
@@ -949,12 +945,7 @@ p span {
 
   .diet-card__img {
     width: 80%;
-    display: none;
     max-width: 445px;
-  }
-
-  .diet-card__img-mob {
-    display: block;
   }
 
   .diet-block__img {
