@@ -52,3 +52,10 @@ $(document).ready(function () {
     $("html").removeClass("no-scroll");
   });
 });
+
+$(document).ready(function () {
+  $(".menu__link").click(function () {
+    $(".menu__link.active__btn").not(this).removeClass("active__btn"); // Remove 'active' class from other buttons
+    $(this).addClass("active__btn");
+  });
+});

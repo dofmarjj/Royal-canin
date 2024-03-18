@@ -311,14 +311,44 @@ nav {
 /* ------/Burger---------------------------------- */
 
 /* Cards */
+
+.img-block {
+  position: absolute;
+  max-width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.img-block img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+}
+
+.img-block::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 20%;
+  width: 100%;
+  height: 60%;
+  background-color: transparent;
+  border-radius: 50%; /* Создание круга */
+  transition: background-color 0.3s ease; /* Анимация смены цвета фона */
+  z-index: 0; /* Задний план, чтобы не перекрывать изображение */
+}
+
+/* Изменение цвета круга при наведении */
+.img-block:hover::before {
+  background-color: #a91255;
+}
+
 .cards-block {
   position: relative;
 }
 
 .cards-block a img:hover {
-  max-width: 7%;
-  box-shadow: 0 0 10px rgba(184, 184, 184, 0.6);
-  transition: 0.3s linear;
 }
 
 .card-1 {
@@ -458,6 +488,16 @@ p span {
   text-transform: uppercase;
 }
 
+.menu__link:hover,
+.menu__link:focus {
+  color: #e2001a;
+}
+
+.menu__link.active__btn {
+  color: #e2001a;
+  border-bottom: 1px solid #e2001a;
+}
+
 /* ---Main------------------------------------- */
 .main {
   flex: 1 1 auto;
@@ -469,7 +509,7 @@ p span {
 }
 
 .page {
-  padding: 120px 0px 0px 0px;
+  padding: 140px 0px 0px 0px;
 }
 
 .page__main-block {
