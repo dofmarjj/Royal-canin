@@ -949,11 +949,8 @@ p span {
 
   .diet-card__img {
     width: 80%;
-    max-width: 445px;
-  }
-
-  .diet-block__img {
     display: none;
+    max-width: 445px;
   }
 
   .diet-card__img-mob {
