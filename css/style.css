@@ -671,6 +671,7 @@ p span {
 }
 
 .factors-block {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1216,6 +1217,27 @@ p span {
   .diet-factors {
     width: 100%;
     padding: 0;
+  }
+
+  .factors-block::after,
+  .diet-factors::after,
+  .factors-block::before,
+  .diet-factors::before {
+    content: "";
+
+    position: absolute;
+    width: 110%;
+    border-bottom: 2px dashed #e5508d;
+  }
+
+  .factors-block::before,
+  .diet-factors::before {
+    top: -40px;
+  }
+
+  .factors-block::after,
+  .diet-factors::after {
+    bottom: -40px;
   }
 
   .diet-factors::before,
