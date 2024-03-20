@@ -40,12 +40,12 @@ var scrollInterval;
 
 function scrollContentLeft() {
   var scrollWrapper = document.getElementById("scrollWrapper");
-  scrollWrapper.scrollLeft -= 10;
+  scrollWrapper.scrollLeft -= 70;
 }
 
 function scrollContentRight() {
   var scrollWrapper = document.getElementById("scrollWrapper");
-  scrollWrapper.scrollLeft += 10;
+  scrollWrapper.scrollLeft += 70;
 }
 
 document
