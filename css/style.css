@@ -927,22 +927,61 @@ p span {
   }
 
   .cards-block {
-    overflow-x: visible;
+    /* overflow-x: auto; */
     overflow-y: hidden;
     z-index: 1;
   }
   input[type="range"] {
-    width: 100%;
+    display: flex;
+
+    margin: auto;
+    width: 80%;
+
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #4caf50 0%, #4caf50 0%, #d3d3d3 0%);
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    margin-top: 10px;
   }
 
-  .cards-block::-webkit-scrollbar {
+  input[type="range"]:hover {
+    opacity: 1;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #e2001a;
+    cursor: pointer;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #e2001a;
+    cursor: pointer;
+  }
+
+  span .value {
+    display: none;
+  }
+
+  /* .cards-block::-webkit-scrollbar {
     width: 12px;
   }
 
   .cards-block::-webkit-scrollbar-thumb {
     background-color: #ff0000;
     border-radius: 6px;
-  }
+  } */
 
   /* ::-webkit-scrollbar {
     width: 5px;
