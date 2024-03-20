@@ -878,7 +878,7 @@ p span {
 /* ---Footer------------------------------------- */
 
 .footer {
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 
 .diet-mobile__block {
@@ -910,10 +910,30 @@ p span {
     display: none;
   }
 
+  .material-placeholder {
+    position: relative;
+  }
+
+  .material-placeholder::before {
+    content: url("../img/size.svg");
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    z-index: 10;
+  }
+
   .cards-block {
-    overflow-x: auto;
+    overflow-x: visible;
+    overflow-y: hidden;
     z-index: 1;
   }
+  /* input[type="range"] {
+    width: 100%;
+  } */
 
   .cards-block::-webkit-scrollbar {
     width: 12px;
