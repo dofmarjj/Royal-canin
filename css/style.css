@@ -158,6 +158,15 @@ hr {
   transition: 0.3s linear;
 }
 
+.btn {
+  width: 100%;
+  position: relative;
+}
+
+.fix {
+  position: absolute !important;
+}
+
 #scrollTopBtn::after {
   content: url("../img/arrow up.svg");
 
@@ -444,7 +453,7 @@ p span {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 100;
 }
 
 .header__container {
@@ -485,7 +494,7 @@ p span {
 }
 .menu__link {
   color: #666666;
-  font-family: DINPro;
+  font-family: DINPro-Medium;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;

@@ -1,10 +1,18 @@
 $(document).ready(function () {
   var block2Offset = $("#block3").offset().top + 400;
+  var block1Offset = $(".btn").offset().top - 800;
 
   // Скрываем кнопку "Подняться наверх"
   $("#scrollTopBtn").hide();
 
   // Показать/скрыть кнопку "Подняться наверх" при достижении блока
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > block1Offset) {
+      $("#scrollTopBtn").addClass("fix");
+    } else {
+      $("#scrollTopBtn").removeClass("fix");
+    }
+  });
   $(window).scroll(function () {
     if ($(this).scrollTop() > block2Offset) {
       $("#scrollTopBtn").fadeIn();
@@ -61,11 +69,6 @@ $(document).ready(function () {
 });
 
 // Full
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   var elems = document.querySelectorAll(".materialboxed");
-//   var instances = M.Materialbox.init(elems, options);
-// });
 
 // Or with jQuery
 
