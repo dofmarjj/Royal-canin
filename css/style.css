@@ -950,11 +950,10 @@ input[type="range"] {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 90%;
   }
 
   .scroll-btn button {
-    max-width: 16px;
     background: transparent;
     border: none;
     font-size: 35px;
