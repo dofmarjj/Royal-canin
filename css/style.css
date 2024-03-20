@@ -927,7 +927,7 @@ p span {
   }
 
   .cards-block {
-    /* overflow-x: auto; */
+    overflow-x: auto;
     overflow-y: hidden;
     z-index: 1;
   }
