@@ -954,6 +954,7 @@ input[type="range"] {
   }
 
   .scroll-btn button {
+    max-width: 16px;
     background: transparent;
     border: none;
     font-size: 35px;
