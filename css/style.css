@@ -959,6 +959,11 @@ input[type="range"] {
     border: none;
     font-size: 35px;
     color: #d7d7d7;
+
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
   }
 
   .scroll-btn button:hover,
