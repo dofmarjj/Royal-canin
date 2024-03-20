@@ -939,9 +939,20 @@ p span {
     width: 12px;
   }
 
-  .cards-block::-webkit-scrollbar-thumb {
+  /* .cards-block::-webkit-scrollbar-thumb {
     background-color: #ff0000; /* Цвет полосы прокрутки */
     border-radius: 6px; /* Скругляем углы полосы прокрутки */
+  } */
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #f2f3f7;
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-track-piece {
+    background: #fff;
   }
 
   .diet-bottom__img,
