@@ -1,12 +1,11 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//   var slider = document.getElementById("slider");
-//   var image = document.getElementById("image");
+document.addEventListener("DOMContentLoaded", function () {
+  var slider = document.getElementById("slider");
+  var scrollWrapper = document.getElementById("scrollWrapper");
 
-//   slider.addEventListener("input", function () {
-//     var value =
-//       (parseInt(slider.value) *
-//         (image.offsetWidth - image.parentElement.offsetWidth)) /
-//       100;
-//     image.style.transform = "translateX(-" + value + "px)";
-//   });
-// });
+  slider.addEventListener("input", function () {
+    var value =
+      (slider.value * (scrollWrapper.scrollWidth - scrollWrapper.clientWidth)) /
+      100;
+    scrollWrapper.scrollLeft = value;
+  });
+});

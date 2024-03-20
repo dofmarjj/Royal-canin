@@ -929,12 +929,11 @@ p span {
   .cards-block {
     overflow-x: visible;
     overflow-y: hidden;
-    overscroll-behavior-x: auto;
     z-index: 1;
   }
-  /* input[type="range"] {
+  input[type="range"] {
     width: 100%;
-  } */
+  }
 
   .cards-block::-webkit-scrollbar {
     width: 12px;
