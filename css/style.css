@@ -891,11 +891,10 @@ p span {
   /* margin-bottom: 100px; */
 }
 
-.diet-mobile__block {
-  display: none;
-}
-
-.header__burger {
+.diet-mobile__block,
+.header__burger,
+.scroll-btn,
+input[type="range"] {
   display: none;
 }
 
@@ -945,11 +944,32 @@ p span {
     overflow-y: hidden;
     z-index: 1;
   }
+
+  .scroll-btn {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .scroll-btn button {
+    background: transparent;
+    border: none;
+    font-size: 35px;
+    color: #d7d7d7;
+  }
+
+  .scroll-btn button:hover,
+  .scroll-btn button:focus {
+    color: red;
+  }
+
   input[type="range"] {
     display: flex;
 
-    margin: auto;
-    width: 80%;
+    /* margin: auto; */
+    width: 90%;
 
     -webkit-appearance: none;
     appearance: none;

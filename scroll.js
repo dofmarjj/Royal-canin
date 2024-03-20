@@ -35,3 +35,51 @@ $(document).ready(function () {
     updateSliderPosition();
   });
 });
+
+var scrollInterval;
+
+function scrollContentLeft() {
+  var scrollWrapper = document.getElementById("scrollWrapper");
+  scrollWrapper.scrollLeft -= 10;
+}
+
+function scrollContentRight() {
+  var scrollWrapper = document.getElementById("scrollWrapper");
+  scrollWrapper.scrollLeft += 10;
+}
+
+document
+  .getElementById("scrollLeftButton")
+  .addEventListener("mousedown", function () {
+    scrollInterval = setInterval(scrollContentLeft, 100);
+  });
+
+document
+  .getElementById("scrollLeftButton")
+  .addEventListener("mouseleave", function () {
+    clearInterval(scrollInterval);
+  });
+
+document
+  .getElementById("scrollLeftButton")
+  .addEventListener("mouseup", function () {
+    clearInterval(scrollInterval);
+  });
+
+document
+  .getElementById("scrollRightButton")
+  .addEventListener("mousedown", function () {
+    scrollInterval = setInterval(scrollContentRight, 100);
+  });
+
+document
+  .getElementById("scrollRightButton")
+  .addEventListener("mouseleave", function () {
+    clearInterval(scrollInterval);
+  });
+
+document
+  .getElementById("scrollRightButton")
+  .addEventListener("mouseup", function () {
+    clearInterval(scrollInterval);
+  });

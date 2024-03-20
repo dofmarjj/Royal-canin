@@ -162,7 +162,15 @@
               </a>
             </div>
           </div>
-          <input type="range" min="0" max="100" value="0" id="slider" />
+          <div class="scroll-btn">
+            <button id="scrollLeftButton" onclick="scrollContentLeft()">
+              ←
+            </button>
+            <input type="range" min="0" max="100" value="0" id="slider" />
+            <button id="scrollRightButton" onclick="scrollContentRight()">
+              →
+            </button>
+          </div>
         </section>
 
         <section id="section-2" class="page__diet diet">
@@ -1075,5 +1083,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="./scroll.js"></script>
+    <script></script>
   </body>
 </html>
