@@ -929,6 +929,7 @@ p span {
   .cards-block {
     overflow-x: visible;
     overflow-y: hidden;
+    overscroll-behavior-x: auto;
     z-index: 1;
   }
   /* input[type="range"] {
@@ -939,12 +940,12 @@ p span {
     width: 12px;
   }
 
-  /* .cards-block::-webkit-scrollbar-thumb {
+  .cards-block::-webkit-scrollbar-thumb {
     background-color: #ff0000;
     border-radius: 6px;
-  } */
+  }
 
-  ::-webkit-scrollbar {
+  /* ::-webkit-scrollbar {
     width: 5px;
   }
   ::-webkit-scrollbar-thumb {
@@ -953,7 +954,7 @@ p span {
   }
   ::-webkit-scrollbar-track-piece {
     background: #fff;
-  }
+  } */
 
   .diet-bottom__img,
   .diet-complex__img,
