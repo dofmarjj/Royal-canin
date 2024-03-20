@@ -635,7 +635,7 @@ p span {
   flex-direction: row;
   flex-wrap: wrap;
   row-gap: 30px;
-  margin-bottom: 80px;
+  margin-bottom: 95px;
 }
 
 .diet-list__item {
@@ -903,6 +903,10 @@ p span {
 }
 
 @media (max-width: 992px) {
+  #scrollTopBtn {
+    font-size: 12px;
+  }
+
   .header__logo {
     margin-bottom: 0;
   }
