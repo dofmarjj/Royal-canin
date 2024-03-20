@@ -987,25 +987,9 @@ p span {
     display: none;
   }
 
-  /* .cards-block::-webkit-scrollbar {
-    width: 12px;
+  .diet-list {
+    margin-bottom: 140px;
   }
-
-  .cards-block::-webkit-scrollbar-thumb {
-    background-color: #ff0000;
-    border-radius: 6px;
-  } */
-
-  /* ::-webkit-scrollbar {
-    width: 5px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #f2f3f7;
-    border-radius: 2px;
-  }
-  ::-webkit-scrollbar-track-piece {
-    background: #fff;
-  } */
 
   .diet-bottom__img,
   .diet-complex__img,
