@@ -585,6 +585,12 @@ p span {
   margin-top: 32px;
 }
 
+.youtube-video {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
 .page-history__img,
 .page-cycle__img {
   width: 50%;
