@@ -894,7 +894,24 @@ p span {
 /* ---Footer------------------------------------- */
 
 .footer {
-  /* margin-bottom: 100px; */
+  background-color: #333;
+}
+
+.mars-footer-list-right {
+  padding: 20px 0 !important;
+}
+
+.mars-footer-list-right li a {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+.mars-footer-label {
+  font-size: 16px !important;
+}
+
+.mars-footer-legal p {
+  color: #d3d3d3;
 }
 
 .diet-mobile__block,
